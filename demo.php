@@ -11,6 +11,6 @@
     $downloader->download();
 
     // download asset from url
-    $downloader->downloadAssetFromURL('https://example.com/index.html');
+    //$downloader->downloadAssetFromURL('https://example.com/index.html');
 
 ?>
