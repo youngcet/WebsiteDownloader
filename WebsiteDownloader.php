@@ -13,12 +13,16 @@ class WebsiteDownloader {
     /** @var string $outputDir The directory where downloaded assets will be saved. */
     private $outputDir;
 
+    /** @var string $mutePrint Indicate wether to echo messages or not. */
+    private $mutePrint;
+
     /**
      * Constructor for the WebsiteDownloader class.
      *
      * @param array $args An associative array containing 'domain' and 'output_dir' keys.
      *                    'domain': The domain of the website to download assets from.
      *                    'output_dir': The directory where downloaded assets will be saved.
+     *                    'silence_console_output': Indicate wether to echo messages or not
      * @throws InvalidArgumentException If 'domain' or 'output_dir' is not provided.
      */
     public function __construct($args) {
@@ -30,8 +34,12 @@ class WebsiteDownloader {
             throw new InvalidArgumentException("Output Directory is required.");
         }
 
+        $this->mutePrint = (! isset($args['silence_console_output'])) ? true
+            : $args['silence_console_output'];
+
         $this->domain = $args['domain'];
         $this->outputDir = $args['output_dir'];
+        
 
         // Create the output directory if it doesn't exist
         if (!file_exists($this->outputDir)) {
@@ -96,9 +104,12 @@ class WebsiteDownloader {
      * Downloads HTML files from the specified website and saves them to the output directory.
      */
     private function downloadHtml(){
-        echo "---------------------------------------\n";
-        echo "Downloading HTML files...\n";
-        echo "---------------------------------------\n";
+        if ($this->mutePrint)
+        {
+            echo "---------------------------------------\n";
+            echo "Downloading HTML files...\n";
+            echo "---------------------------------------\n";
+        }
 
         $content = file_get_contents($this->domain);
         $dom = new DOMDocument();
@@ -125,14 +136,20 @@ class WebsiteDownloader {
               if (! $this->startsWith ($filename, ['#'])) {
                 $filename = str_replace('?', '.', $filename);
                 $this->downloadFile($this->outputDir, $href, $filename);
-                echo "$href\n";
+                if ($this->mutePrint)
+                {
+                    echo "$href\n";
+                }
               }
             }
         }
 
-        echo "---------------------------------------\n";
-        echo "Downloading HTML Completed!\n";
-        echo "---------------------------------------\n";
+        if ($this->mutePrint)
+        {
+            echo "---------------------------------------\n";
+            echo "Downloading HTML Completed!\n";
+            echo "---------------------------------------\n";
+        }
     }
 
     /**
@@ -147,13 +164,19 @@ class WebsiteDownloader {
 
             $file = "$this->outputDir/$filename";
 
-            echo "---------------------------------------\n";
-            echo "File Downloaded: $file\n";
-            echo "---------------------------------------\n";
+            if ($this->mutePrint)
+            {
+                echo "---------------------------------------\n";
+                echo "File Downloaded: $file\n";
+                echo "---------------------------------------\n";
+            }
         }else{
-            echo "---------------------------------------\n";
-            echo "Error: Invalid URL provided.\n";
-            echo "---------------------------------------\n";
+            if ($this->mutePrint)
+            {
+                echo "---------------------------------------\n";
+                echo "Error: Invalid URL provided.\n";
+                echo "---------------------------------------\n";
+            }
         }
     }
 
@@ -199,7 +222,10 @@ class WebsiteDownloader {
                             $this->downloadFile($this->outputDir, $href, $filename);
                         }
 
-                        echo "$href\n";
+                        if ($this->mutePrint)
+                        {
+                            echo "$href\n";
+                        }
                     }
                 }
 
@@ -224,7 +250,10 @@ class WebsiteDownloader {
                         $this->downloadFile($this->outputDir, $href, $filename);
                     }
 
-                    echo "$href\n";
+                    if ($this->mutePrint) 
+                    {
+                        echo "$href\n";
+                    }
                 }
             }
         }
@@ -237,16 +266,22 @@ class WebsiteDownloader {
      * of the download process.
      */
     private function downloadEmbededHTML(){
-        echo "---------------------------------------\n";
-        echo "Downloading Embeded HTML files...\n";
-        echo "---------------------------------------\n";
+        if ($this->mutePrint)
+        {   
+            echo "---------------------------------------\n";
+            echo "Downloading Embeded HTML files...\n";
+            echo "---------------------------------------\n";
+        }
 
         $files = glob ("$this->outputDir/*.html");
         $this->downloadAssetsFromDOM($files, 'a', 'href');
 
-        echo "---------------------------------------\n";
-        echo "Downloading Embeded HTML files Complete!\n";
-        echo "---------------------------------------\n";
+        if ($this->mutePrint)
+        {
+            echo "---------------------------------------\n";
+            echo "Downloading Embeded HTML files Complete!\n";
+            echo "---------------------------------------\n";
+        }
     }
 
     /**
@@ -255,16 +290,22 @@ class WebsiteDownloader {
      * After downloading, it prints messages indicating the start and completion of the download process.
      */
     private function downloadCSSAndFavIcons(){
-        echo "---------------------------------------\n";
-        echo "Downloading CSS and Image files...\n";
-        echo "---------------------------------------\n";
+        if ($this->mutePrint)
+        {
+            echo "---------------------------------------\n";
+            echo "Downloading CSS and Image files...\n";
+            echo "---------------------------------------\n";
+        }
 
         $files = glob ("$this->outputDir/*.html");
         $this->downloadAssetsFromDOM($files, 'link', 'href');
 
-        echo "---------------------------------------\n";
-        echo "Downloading CSS and Image files Complete!\n";
-        echo "---------------------------------------\n";
+        if ($this->mutePrint)
+        {
+            echo "---------------------------------------\n";
+            echo "Downloading CSS and Image files Complete!\n";
+            echo "---------------------------------------\n";
+        }
     }
 
     /**
@@ -273,16 +314,22 @@ class WebsiteDownloader {
      * After downloading, it prints messages indicating the start and completion of the download process.
      */
     private function downloadJS(){
-        echo "---------------------------------------\n";
-        echo "Downloading JS files...\n";
-        echo "---------------------------------------\n";
+        if ($this->mutePrint)
+        {
+            echo "---------------------------------------\n";
+            echo "Downloading JS files...\n";
+            echo "---------------------------------------\n";
+        }
 
         $files = glob ("$this->outputDir/*.html");
         $this->downloadAssetsFromDOM($files, 'script', 'src');
 
-        echo "---------------------------------------\n";
-        echo "Downloading JS files Complete!\n";
-        echo "---------------------------------------\n";
+        if ($this->mutePrint)
+        {
+            echo "---------------------------------------\n";
+            echo "Downloading JS files Complete!\n";
+            echo "---------------------------------------\n";
+        }
     }
 
     /**
@@ -291,16 +338,22 @@ class WebsiteDownloader {
      * After downloading, it prints messages indicating the start and completion of the download process.
      */
     private function downloadImages(){
-        echo "---------------------------------------\n";
-        echo "Downloading Image files...\n";
-        echo "---------------------------------------\n";
+        if ($this->mutePrint)
+        {
+            echo "---------------------------------------\n";
+            echo "Downloading Image files...\n";
+            echo "---------------------------------------\n";
+        }
 
         $files = glob ("$this->outputDir/*.html");
         $this->downloadAssetsFromDOM($files, 'img', 'src');
 
-        echo "---------------------------------------\n";
-        echo "Downloading Image files Complete!\n";
-        echo "---------------------------------------\n";
+        if ($this->mutePrint)
+        {
+            echo "---------------------------------------\n";
+            echo "Downloading Image files Complete!\n";
+            echo "---------------------------------------\n";
+        }
     }
 
     private function startsWith($word, $startsWith) {

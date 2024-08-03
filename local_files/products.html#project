@@ -1,0 +1,288 @@
+<!-- #Include FILE="Config.asp" -->
+
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Products & Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <div class="page">
+            <header class="section page-header">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap" style="height:128px !Important;background-color:darkgray">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-aside-outer rd-navbar-collapse bg-black" style="background-color:#404040 !Important">
+              <div class="rd-navbar-aside" style="background-color:#404040 !Important">
+                <ul class="list-inline navbar-contact-list">
+                  <li>
+                    <div class="unit unit-spacing-xs align-items-center">
+                      <div class="unit-left"><span class="icon text-middle fa-phone"></span></div>
+                      <div class="unit-body"><a href="tel:#">0860DIZANI</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-xs align-items-center">
+                      <div class="unit-left"><span class="icon text-middle fa-envelope"></span></div>
+                      <div class="unit-body"><a href="mailto:#">info@dizani.co.za</a></div>
+                    </div>
+                  </li>
+
+                </ul>
+                <ul class="social-links">
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-linkedin" href="https://www.linkedin.com/company/dizani-consulting"></a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer" style="color:black !Important; background-color:black !Important;">
+              <div class="rd-navbar-main">
+                <!--RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!--RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!--RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                      <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/dizani_black.png" alt="" width="100" height="17"/><img class="brand-logo-light" src="images/dizani_black.png" alt="" width="100" height="17"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item "><a class="rd-nav-link" href="index.html">Home</a>
+                      </li>
+
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="products.html">Products & Services</a>
+                      </li>
+                      <li class="rd-nav-item "><a class="rd-nav-link" href="customers.html">Customers</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="casestudies.asp">Case Studies</a>
+                      </li>
+
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="news.asp">News</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="downloads.asp">Downloads</a>
+                      </li>
+
+
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="section main-section parallax-scene-js" style="background:url('images/bg-dizani.png') no-repeat center center; background-size:cover;padding-top:100px !Important">
+        <div class="container">
+
+          <div class="row justify-content-center">
+ 
+              <div class="main-decorated-box text-center ">
+                  <div style="width:750px;height:450px;align-content:center !Important">
+
+
+
+
+                     <section class="section section-sm section-banner" id="Section1" style="padding-top:300px;width:100% !Important">
+                               <h1 class="font-weight-bold wow fadeInLeft" style="align-content:center !Important">Products & Services</h1>
+    
+                     </section>
+
+                  </div>
+
+               
+              </div>
+          
+            
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!--About-->
+      <section class="section section-sm position-relative" id="about">
+        <div class="container">
+          <div class="row row-30">
+
+
+                <div   class="section-name wow fadeInRight" data-wow-delay=".2s"></div>
+                <h3 class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s"><span class="text-primary"> LEAN Deployment</span></h3>
+
+             <div id="lean" class="col-lg-12 col-12">
+
+               <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s"><img  class="wrap" style="margin-left:30px" src="images/lean.jpg" alt="" width="570" height="351"/>
+                  <p>
+                        Since 2007, Dizani has been building a proud record of Improving businesses in various industries, by applying LEAN and the best available techniques to improve productivity.  Efficiency gains of up to 40% have been achieved.
+                        The secret weapon is a unique model that has been developed to ensure optimum knowledge transfer from consultant to customer. This is combined with cutting edge Performance Measurement Systems to track Performance Live and making it known to staff, so to motivate themselves rather than the traditional 'Big Stick' approach.
+                   </p>  
+                   <p> LEAN is a method of optimizing flow within a business, to minimize throughput time from Input stage to Output by constantly identifying and eliminating waste within the process.  Dizanis unique model ensures a sustainable solution through a layered approach.
+                        Underpinning the solution, is a Steering Committee.  This is the group of people giving direction to the intervention.
+
+                   </p>  
+                   <p> Monthly meetings between Dizani and key decision makers in the organization will provide meaningful direction and an opportunity to review results in order to plan the road ahead.
+                        The next layer is to entrench the LEAN foundation.  Practical, SETA accredited TRAINING is provided on the LEAN methodology.  5S, a housekeeping system, focusing on discipline within the workplace is implemented.  The business is exposed to the different types of WASTE and taught how to identify and eliminate this.  Teams are set up and meetings implemented to enable problem solving at the level where the problem occurs. 
+                   </p>  
+                   <p> VISUAL MANAGEMENT facilities are implemented to make performances known and enable teams to track and improve their own results.  PERFORMANCE MEASUREMENT is Implemented to track performances live.  This could be done through Dizani's On-Line Performance Measurement System, PER4MA.  This software enables live displays, and automated reporting and graphs to ease the process of Performance Measurement.
+                        Once a Strong LEAN foundation is in place, The LEAN Project Process is followed in order to make improvements to the business.  Each project goes through a structured process of: Define Value, Identify the Value Stream, Design the New System, Implement Flow, Implement Pull and Strive for Perfection. This again is a proven Methodology ensuring Sustainability. Each individual project varies in size, complexity and savings potential, but it is the multitude of these projects that brings about substantial bottom line savings to the customer.  
+                        Finally, all savings generated through these Projects feed into the LEAN Metrics, A Project Measurement tool which totals the savings across each individual project.  Through our inclusive process of getting people within the business to run projects, Teams are given recognition for their projects and savings achieved.  Dizani aims for a minimum of 400% return on investment.
+
+
+                  </p>
+
+              </div>
+
+              </div>
+
+          </div>
+
+
+          <div class="row row-30">
+
+
+                <div class="section-name wow fadeInRight" data-wow-delay=".2s"></div>
+                <h3 class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s"><span class="text-primary"> Performance Measurement</span></h3>
+
+             <div id="performance"  class="col-lg-12 col-12">
+
+               <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s"><img  class="wrap"  style="margin-left:30px" src="images/performance.png" alt="" width="570" height="351"/>
+                  <p>
+                        At Dizani, we believe that you cannot manage what you do not measure. Linking to our flagship offering, LEAN, we believe that the measurement and management of productivity is a vital foundation to improving a business. Over several years of consulting within many different industries and with a focus on manufacturing, we noticed there was a severe lack of data recording and decision making based on accurate production data. In the businesses where data was recorded, we often noticed the data was manually captured, inaccurate and very seldomly used for meaningful decision making.
+                        With these issues in mind, we developed Per4ma. Per4ma is a comprehensive and automated performance measurement tool, designed based on tried-and-tested industrial engineering concepts and knowledge. Built from the ground up, Per4ma has been designed with simplicity and practicality in mind knowing that we need to make accurate data more accessible not make it even harder to come by. With our proprietary web-based interface, this data can be accessed remotely from any device you choose. Our hardware offering is deeply integrated with this web interface to provide automated data capturing from all types of machinery as well as the live display of reports and graphs to the factory floor and all the way up to senior management.
+
+                   </p>  
+                  
+
+              </div>
+
+              </div>
+
+          </div>
+
+
+          <div class="row row-30">
+
+
+                <div class="section-name wow fadeInRight" data-wow-delay=".2s"></div>
+                <h3 class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s"><span class="text-primary"> Project Management</span></h3>
+
+             <div id="project"  class="col-lg-12 col-12">
+
+               <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s"><img  class="wrap" style="margin-left:30px" src="images/projectmanage.jpg" alt="" width="570" height="351"/>
+                  <p>
+                        Project management is the activity that aims to achieve the successful completion of a project by integrating and coordinating resources across functions.
+                        A project can be defined as any series of activities or tasks that build towards a common objective. This objective, in most cases, needs to be achieved within specified time, funding and specification constraints.
+                        A project consumes resources and therefore it needs to be carefully planned and controlled to ensure that the objective is achieved within the constraints. Project management is the process of performing these planning and controlling activities using tried and tested tools and techniques.
+
+                   </p>  
+                   <p> The Dizani team has a long history in managing projects of all sizes across a variety of different fields. The Dizani consultants are well versed in all the different project management tools and techniques and can back it up with substantial practical experience gained through managing projects for a diverse clientele.
+                   </p>  
+
+
+              </div>
+
+              </div>
+
+          </div>
+
+          <div class="row row-30">
+
+
+                <div class="section-name wow fadeInRight" data-wow-delay=".2s"></div>
+                <h3 class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s"><span class="text-primary"> Other Services</span></h3>
+
+             <div id="other"  class="col-lg-12 col-12">
+
+               <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s"><img  class="wrap"  style="margin-left:30px" src="images/kanban.png" alt="" width="570" height="351"/>
+                   <h4>eKanban</h4>
+                  <p>
+                        eKanban is a scheduling system for lean manufacturing and just in time system (JIT). This is a closed loop system that uses consumption based replenishment instead of forecast based replenishment. Inventory control is achieved by using bin system. Material is stocked in bins and each bin represents one Kanban card. When the bin becomes empty, it triggers a demand signal to the source. The source can be internal manufacturing or an external supplier.
+
+                   </p>  
+           
+
+
+              </div>
+
+              </div>
+
+          </div>
+        </div>
+        <div class="decor-text decor-text-1"></div>
+      </section>
+
+                      
+
+      <!--Mailform-->
+
+      
+      <footer class="section footer-classic section-sm"  style="background:url('images/footer 1700x803.png') no-repeat center center; background-size:cover;padding-top:20px">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-lg-3 wow fadeInLeft">
+              <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/dizani_white.png" alt="" width="100" height="17"/><img class="brand-logo-light" src="images/dizani_white.png" alt="" width="100" height="17"/></a>
+ 
+            </div>
+
+            <div class="col-lg-3 col-sm-8 wow fadeInUp" style="color:black">
+             <p class="footer-classic-description offset-top-0 offset-right-25" style="color:black">Dizani provides a full range of business consulting & advisory services to small, medium, and international companies worldwide. We use innovations and experience to drive your success.</p>
+            </div>
+            <div class="col-lg-2 col-sm-8 wow fadeInUp" style="color:black">
+              <P  style="color:black" class="footer-classic-title">contact info</P>
+             <div  style="color:black" class="d-block offset-top-0">HEAD OFFICE<span class="d-lg-block">Durban, RSA</span></div><a  style="color:black;min-width:270px" class="d-inline-block accent-link" href="mailto:#">info@dizani.co.za</a><a  style="color:black" class="d-inline-block" href="tel:#">+0860 DIZANI</a>
+
+            </div>
+            <div class="col-lg-2 col-sm-4 wow fadeInUp" data-wow-delay=".3s" style="color:black">
+              <P class="footer-classic-title" style="color:black">Quick Links</P>
+              <ul class="footer-classic-nav-list" style="color:black">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products & services</a></li>
+                <li><a href="casestudies.asp">Case Studies</a></li>
+                <li><a href="news.asp">News</a></li>
+                <li><a href="downloads.asp">Downloads</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
+
+            </div>
+          </div>
+        </div>
+        <div class="container wow fadeInUp" data-wow-delay=".4s">
+          <div class="footer-classic-aside">
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. </p>
+            <ul class="social-links">
+              <li><a class="fa fa-linkedin" href="https://www.linkedin.com/company/dizani-consulting"></a></li>
+
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
