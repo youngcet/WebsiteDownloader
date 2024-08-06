@@ -3,7 +3,7 @@
     require ('WebsiteDownloader.php');
 
     $downloader = new WebsiteDownloader([
-        'domain' => 'https://www.domain.co.za/',
+        'domain' => 'https://cio-sa.co.za',
         'output_dir' => 'local_files'
     ]);
 

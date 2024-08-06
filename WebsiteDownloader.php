@@ -191,6 +191,10 @@ class WebsiteDownloader {
         foreach ($files as $file){
             $content = file_get_contents($file);
 
+            if (empty ($content)){
+                continue;
+            }
+
             $dom = new DOMDocument();
             @$dom->loadHTML($content);
             $links = $dom->getElementsByTagName($tagName);
